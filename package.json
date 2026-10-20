@@ -1,0 +1,17 @@
+{
+  "name": "Godcord",
+  "version": "0.1.0",
+  "description": "Basit Discord overlay arayüzü",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "inject": "node scripts/build.mjs && node scripts/inject.mjs inject",
+    "uninject": "node scripts/inject.mjs uninject",
+    "sync": "node scripts/build.mjs && node scripts/inject.mjs sync",
+    "dev": "node scripts/build.mjs --watch"
+  },
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
